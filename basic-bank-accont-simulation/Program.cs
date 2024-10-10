@@ -1,5 +1,6 @@
 ﻿using basic_bank_accont_simulation.Class;
 using System;
+using System.Globalization;
 
 namespace basic_bank_accont_simulation
 {
@@ -40,7 +41,8 @@ namespace basic_bank_accont_simulation
                 }
                 else if (action == "balance" || action == "1")
                 {
-                    Console.WriteLine($"\nYour balance is ${balance}");
+                    Console.WriteLine($"\nYour balance is: " +
+                        $"{balance.ToString("C", CultureInfo.CurrentCulture)}");
                 }
                 else if (action == "deposit" || action == "2")
                 {
@@ -50,7 +52,8 @@ namespace basic_bank_accont_simulation
 
                     decimal newBalance = account.Deposit(depositAmount);
 
-                    Console.WriteLine($"\nYour new balance is: ${newBalance}");
+                    Console.WriteLine($"\nYour new balance is: " +
+                        $"{newBalance.ToString("C", CultureInfo.CurrentCulture)}");
                 }
                 else if (action == "withdraw" || action == "3")
                 {
@@ -60,13 +63,15 @@ namespace basic_bank_accont_simulation
 
                     if (withdrawAmount > balance)
                     {
-                        Console.WriteLine($"\nInsufficent fund you available balance is: ${balance}");
+                        Console.WriteLine($"\nInsufficent fund you available balance is: " +
+                            $"{balance.ToString("C", CultureInfo.CurrentCulture)}");
                     } 
                     else
                     {
                         decimal newBalance = account.Withdraw(withdrawAmount);
 
-                        Console.WriteLine($"\nYour new balance is: ${newBalance}");
+                        Console.WriteLine($"\nYour new balance is: " +
+                            $"{newBalance.ToString("C", CultureInfo.CurrentCulture)}");
                     }
                 }
                 else if (action == "exit"|| action == "4")
