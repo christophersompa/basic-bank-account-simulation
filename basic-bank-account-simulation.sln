@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic-bank-accont-simulation", "basic-bank-accont-simulation\basic-bank-accont-simulation.csproj", "{CE8611E8-CFF7-40F5-8F6E-8143B504DFF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic-bank-account-simulation", "basic-bank-accont-simulation\basic-bank-account-simulation.csproj", "{CE8611E8-CFF7-40F5-8F6E-8143B504DFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
